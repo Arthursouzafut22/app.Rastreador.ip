@@ -1,0 +1,168 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Anton&family=Heebo:wght@300&family=Kumbh+Sans:wght@500&family=Nunito+Sans:ital,opsz,wght@0,6..12,500;1,6..12,500&family=Nunito:wght@800&family=Open+Sans:wght@300;400;500&family=Pacifico&family=Poppins:ital,wght@0,300;0,500;0,800;1,400&family=Roboto:wght@400;500&family=Rubik:wght@700&display=swap');
+
+ * {
+    box-sizing: border-box;
+ }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-image: url(./img/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;
+    padding: 2.375rem;
+}
+
+.header h1 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 2.8125rem;
+    margin-top: 0px;
+}
+
+.pesquisa-ip {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 4.375rem;
+   max-width: 800px;
+   width: 100%;
+   margin: 0 auto;
+   position: relative;
+}
+
+#buscarIp {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 1rem 0.625rem;
+    border-radius: 10px 0px 0px 10px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 1.5625rem;
+}
+
+.btn-ip {
+    border: none;
+    outline: none;
+    display: block;
+    padding: 1rem 1.25rem;
+    background-color: black;
+    color: white;
+    font-size: 1.75rem;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+
+.informacoes-ip {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    background-color: white;
+    max-width: 1000px;
+    width: 90%;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1000;
+    top: -60px;
+    box-shadow: 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+}
+
+.info {
+    text-align: center;
+    max-width: 300px;
+    padding: 1.25rem;
+}
+
+.info h1 {
+    color: #9DA8B1;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+}
+
+.info p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5625rem;
+}
+
+.container-ip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#map { 
+    height: 480px; 
+    width: 100%;
+}
+
+@media (max-width:763px) {
+    .header {
+        padding: 1.25rem;
+    }
+    .header h1 {
+        font-size: 1.6875rem;
+    }
+
+    #buscarIp {
+        font-size: 1.0625rem;
+        text-align: left;
+    }
+    .btn-ip {
+        font-size: 1.1875rem;
+        padding: 0.9375rem 1.25rem;
+    }
+    .informacoes-ip {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info h1 {
+        font-size: 0.875rem;
+        margin: 0;
+    }
+    .info  p {
+        font-size: 1.25rem;
+        margin: 8px 0px 0px 0px;
+    }
+    
+}
+
+
+@media (min-width:763px) and (max-width:1000px) {
+    #buscarIp {
+        font-size: 1.0625rem;
+        text-align: left;
+    }
+    .btn-ip {
+        font-size: 1.1875rem;
+        padding: 0.9375rem 1.25rem;
+    }
+    .info h1 {
+        font-size: 0.875rem;
+        margin: 0;
+    }
+    .info  p {
+        font-size: 1.25rem;
+        margin: 8px 0px 0px 0px;
+    }
+    .informacoes-ip {
+        flex-direction: column;
+        align-items: center; 
+    }
+}
+        

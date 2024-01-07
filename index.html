@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt - BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Rastreador Ip</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Rastreador de endereço IP</h1>
+        <div class="pesquisa-ip">
+            <input type="text" placeholder="Pesquise qualquer endereço IP ou domínio" id="buscarIp">
+            <button class="btn-ip" onclick="buscarIp()">></button>
+        </div>
+    </header>
+    <section class="container-ip">
+    <div class="informacoes-ip">
+        <div class="info">
+            <h1>ENDEREÇO DE IP</h1>
+            <p id="enderecoIp">122.22.22.1</p>
+        </div>
+        <div class="info">
+            <h1>LOCALIZAÇÃO</h1>
+            <p id="localizacaoIp">JP Prefeitura de Quioto</p>
+        </div>
+        <div class="info">
+            <h1>FUSO HORÁRIO</h1>
+            <p id="horarioIp">UTC +09:00</p>
+        </div>
+        <div class="info">
+            <h1>ISP</h1>
+            <p id="isp">Corporação de Comunicações NTT</p>
+        </div>
+    </div>
+    </section>
+    <div id="map"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
