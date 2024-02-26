@@ -14,3 +14,5 @@ Desenvolvi esse projeto utilizando duas APIs. Onde o usuário pode colocar o end
 ## Autor
 
 • Frontend - @Arthursouzafut22
+
+## Link site ativo https://cozy-choux-4a09af.netlify.app/
